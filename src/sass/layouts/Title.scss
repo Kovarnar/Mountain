@@ -1,0 +1,18 @@
+@import '../base/index.scss';
+
+.title {
+    font-family: $oswaldFont;
+    font-weight: 600;
+    font-size: rem(32px);
+    line-height: 1.15;
+    color: $dark;
+    @media only screen and (min-width: 576px) {
+        font-size: rem(36px);
+    }
+    @media only screen and (min-width: 768px) {
+        font-size: rem(46px);
+    }
+    @media only screen and (min-width: 1024px) {
+        font-size: rem(52px);
+    }
+}

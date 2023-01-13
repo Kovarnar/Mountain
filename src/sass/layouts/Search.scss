@@ -1,0 +1,69 @@
+@import '../base/index.scss';
+
+.search {
+    position: relative;
+    height: 35px;
+    width: 35px;
+
+    &__fild {
+        display: none;
+        color: $dark;
+        font-family: $robotoFont;
+        font-size: rem(14px);
+        height: 35px;
+        width: 35px;
+        border: none;
+        border-bottom: 2px solid transparent;
+        border-radius: 35px;
+        outline: none;
+        background-color: $dark;
+        // transition: all 4s cubic-bezier(0, 0.8, 0, 1);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        &::placeholder {
+            color: $light;
+            font-family: $robotoFont;
+            font-size: rem(12px);
+        }
+    }
+
+    &__btn {
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        border-radius: 50%;
+        font-size: rem(14px);
+        color: $superLight;
+        background-color: $superLight40;
+        // transition: all 4s cubic-bezier(0, 0.8, 0, 1);
+        @include center;
+        .icon {
+            color: $superLight;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        .search__fild {
+            display: unset;
+            width: 250px;
+            background-color: $white;
+            padding: 0 45px 0 10px;
+            color: $darkGrey;
+            &::placeholder {
+                color: $dark;
+            }
+        }
+        .search__btn {
+            .icon {
+                color: $dark;
+            }
+        }
+        
+    }
+}

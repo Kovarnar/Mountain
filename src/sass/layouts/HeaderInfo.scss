@@ -1,0 +1,15 @@
+@import '../base/index.scss';
+
+.info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    gap: 30px;
+    
+}
+
+@media only screen and (min-width: 375px) {
+    .info {
+        flex-direction: row;
+    }
+}

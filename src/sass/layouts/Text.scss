@@ -1,0 +1,16 @@
+@import '../base/index.scss';
+
+.text {
+    font-family: $robotoFont;
+    font-weight: 400;
+    font-size: rem(12px);
+    @media only screen and (min-width: 576px) {
+        font-size: rem(14px);
+    }
+    @media only screen and (min-width: 768px) {
+        font-size: rem(16px);
+    }
+    @media only screen and (min-width: 1024px) {
+        font-size: rem(18px);
+    }
+}

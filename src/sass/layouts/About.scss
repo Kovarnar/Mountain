@@ -1,0 +1,72 @@
+@import '../base/index.scss';
+
+.about {
+    padding: 70px 0;   //140px
+    &__map{
+        img {
+            width: 100%;
+            height: unset;
+        }
+    }
+
+    &__content{
+        margin-bottom: 20px;  //
+    }
+
+    .title{
+        margin-bottom: 30px;
+    }
+
+    .text{
+        color: $dark;
+        line-height: 1.5;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .about {
+        padding: 100px 0;
+        .title{
+            margin-bottom: 35px;
+        }
+        .text{
+            &:not(:last-child) {
+                margin-bottom: 17px;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .about {
+        padding: 140px 0;
+        
+        &__container{
+            display: flex;
+            align-items: center;
+        }
+        &__map{
+            img {
+                width: 100%;
+                height: unset;
+            }
+        }
+        &__content{
+            margin-bottom: 0;
+            width: 50%;
+        }
+        .title{
+            margin-bottom: 40px;
+        }
+        .text{
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,82 @@
+@import '../base/index.scss';
+
+.enter{
+    &__btn {
+        height: 35px;
+        width: 35px;
+        border: none;
+        border-radius: 50%;
+        font-size: rem(14px);
+        color: $superLight;
+        background-color: $superLight40;
+        @include center;
+        .icon {
+            color: $superLight;
+        }
+        &:hover,
+        &:focus {
+            background-color: $white;
+            .icon {
+                color: $dark;
+            }
+        }
+    }
+
+    .modal{
+        display: none;
+
+        &--active {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px 20px 30px;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 250px;
+            max-width: 400px;
+            background-color: $light;
+            border: 2px solid $darkGrey;
+            border-radius: 5px;
+        }
+
+        &__close {
+            align-self: flex-end;
+            transform: translate(10px, -10px);
+            background-color: transparent;
+            border: none;
+            .icon {
+                color: $dark;
+                font-size: rem(20px);
+            }
+        }
+
+        &__forgot {
+            color: #1677b3;
+            transition: color .3s ease;
+            &:hover {
+                color: #0898f1;
+            }
+        }
+
+        &__info {
+            font-size: rem(12px);
+            color: $dark;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .enter{
+        .modal{
+            &--active {
+                height: fit-content;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+    }
+}

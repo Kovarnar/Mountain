@@ -1,0 +1,32 @@
+@import '../base/index.scss';
+
+
+.header__btn {
+    position: absolute;
+    z-index: 5;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    color: $superLight;
+    background-color: transparent;
+    border: none;
+    
+    .icon {
+
+        width: 35px;
+        height: 35px;
+        color: $superLight;
+    }
+    &:hover, &:focus {
+        .icon {
+            color: $light;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header__btn {
+        display: none;
+    }
+}
