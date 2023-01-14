@@ -1,0 +1,134 @@
+@import '../base/index.scss';
+
+.contacts {
+    padding: 50px 0;  // 140px
+    .maps {
+        width: 100%;
+    }
+    &__office {
+        width: fit-content;
+        align-self: center;
+        margin: 0 auto 30px;
+    }
+    .title {
+        text-align: center;
+        margin-bottom: rem(25px);
+    }
+    &__list{
+        color: $dark;
+        font-family: $robotoFont;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+    &__item:not(:last-child){
+        margin-bottom: 20px;
+    }
+    span {
+        display: block;
+        margin-bottom: 5px;
+        font-size: rem(12px);
+    }
+    p, a {
+        display: block;
+        font-size: rem(16px);
+        font-weight: 500;
+    }
+    a:hover {
+        color: #095483;
+    }
+    &__social {
+        display: flex;
+        gap: 20px;
+        li {
+            @include center
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contacts {
+        padding: 70px 0;
+        .container{
+            display: grid;
+            grid-template-columns: 65% 35%;
+            gap: 30px;
+        }
+        .maps {
+            height: 100%;
+        }
+        &__office {
+            width: unset;
+            align-self: unset;
+            order: 5;
+            margin: unset;
+        }
+        .title {
+            text-align: unset;
+            margin-bottom: rem(35px);
+        }
+        &__item:not(:last-child){
+            margin-bottom: 20px;
+        }
+        span {
+            margin-bottom: 10px;
+            font-size: rem(14px);
+        }
+        p, a {
+            display: block;
+            font-size: rem(16px);
+        }
+        &__social {
+            gap: 25px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .contacts {
+        padding: 100px 0;
+        .container{
+            gap: 50px;
+        }
+        .title {
+            margin-bottom: rem(50px);
+        }
+        &__item:not(:last-child){
+            margin-bottom: 30px;
+        }
+        span {
+            font-size: rem(16px);
+            margin-bottom: 15px;
+        }
+        p, a {
+            font-size: rem(20px);
+        }
+        &__social {
+            gap: 30px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .contacts {
+        padding: 140px 0;
+        .container {
+            gap: 70px;
+        }
+        .title {
+            margin-bottom: rem(60px);
+        }
+        &__item:not(:last-child){
+            margin-bottom: 40px;
+        }
+        span {
+            font-size: rem(18px);
+            margin-bottom: 20px;
+        }
+        p, a {
+            font-size: rem(22px);
+        }
+        &__social {
+            gap: 33px;
+        }
+    }
+}

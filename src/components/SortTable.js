@@ -26,10 +26,12 @@ function SortTable() {
     return (
         <table className='table'>
             <thead>
-                <th onClick={()=>sorting('mountain')}>Вершина</th>
-                <th onClick={()=>sorting('height')}>Высота</th>
-                <th onClick={()=>sorting('level')}>Уровень</th>
-                <th onClick={()=>sorting('price')}>Стоимость</th>
+                <tr>
+                    <th onClick={()=>sorting('mountain')}>Вершина</th>
+                    <th onClick={()=>sorting('height')}>Высота</th>
+                    <th onClick={()=>sorting('level')}>Уровень</th>
+                    <th onClick={()=>sorting('price')}>Стоимость</th>
+                </tr>
             </thead>
             <tbody>
                 { data.map((d) => (

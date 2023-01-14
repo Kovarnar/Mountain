@@ -8,7 +8,7 @@
     border: 1px solid $superLight;
     color: $superLight;
     font-family: $robotoFont;
-    font-size: 1rem;
+    font-size: rem(12px);
     font-weight: 500;
     line-height: 1.17;
     transition: all .5s ease;
@@ -28,5 +28,6 @@
         min-height: 45px;
         padding: 10px;
         border: 2px solid $superLight;
+        font-size: 1rem;
     }
 }

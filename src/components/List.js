@@ -1,8 +1,10 @@
-import Title from './components/Title';
-import Text from './components/Text';
-import SortTable from './components/SortTable';
-import BtnLink from './components/BtnLink';
-import './sass/layouts/List.scss';
+import Title from './Title';
+import Text from './Text';
+import SortTable from './SortTable';
+import BtnLink from './BtnLink';
+import '../sass/layouts/List.scss';
+import '../../src/List.css';
+// import '../sass/layouts/List.scss';
 
 function List() {
     return (

@@ -3,15 +3,14 @@ import { Autoplay } from 'swiper';
 import { Pagination } from "swiper";
 import { HiLocationMarker } from "react-icons/hi";
 import { RxBookmarkFilled, RxBookmark } from "react-icons/rx";
+import { useState } from "react";
 import "swiper/css/pagination";
 import "../sass/layouts/PopSwiper.scss";
-import { useState } from "react";
-import Tours from './Tours';
 
 function PopSwiper() {
-
     const forItems = [
         {
+            id: 1,
             src1: require('../img/popular/img3.webp'),
             src2: require('../img/popular/img3@2x.webp'),
             src3: require('../img/popular/img3@3x.webp'),
@@ -25,6 +24,7 @@ function PopSwiper() {
             level: 'Средний уровень'
         },
         {
+            id: 2,
             src1: require('../img/popular/img2.webp'),
             src2: require('../img/popular/img2@2x.webp'),
             src3: require('../img/popular/img2@3x.webp'),
@@ -38,6 +38,7 @@ function PopSwiper() {
             level: 'Средний уровень'
         },
         {
+            id: 3,
             src1: require('../img/list/list1.webp'),
             src2: require('../img/list/list1.webp'),
             src3: require('../img/list/list1@3x.webp'),
@@ -50,9 +51,8 @@ function PopSwiper() {
             price: 'от 3500 $',
             level: 'Простой уровень'
         },
-    
-    
         {
+            id: 4,
             src1: require('../img/list/list2.webp'),
             src2: require('../img/list/list2@2x.webp'),
             src3: require('../img/list/list2@3x.webp'),
@@ -67,6 +67,7 @@ function PopSwiper() {
         },
     
         {
+            id: 5,
             src1: require('../img/popular/img1.webp'),
             src2: require('../img/popular/img1@2x.webp'),
             src3: require('../img/popular/img1@3x.webp'),
@@ -80,6 +81,7 @@ function PopSwiper() {
             level: 'Сложный уровень'
         },
         {
+            id: 6,
             src1: require('../img/hero/hero1.webp'),
             src2: require('../img/hero/hero1.webp'),
             src3: require('../img/hero/hero1.webp'),
@@ -150,7 +152,6 @@ function PopSwiper() {
                         </div>
                     </SwiperSlide>
                 })}
-                
             </Swiper>
         </>
     );

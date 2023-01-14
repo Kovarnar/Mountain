@@ -1,12 +1,80 @@
 @import '../base/index.scss';
 
 .table {
-
+    th, td {
+        font-family: $robotoFont;
+        line-height: 1.4;
+        border-bottom: 1px solid $darkGrey;
+        padding: 5px 10px;
+        width: max-content;
+        text-align: center;
+    }
     th {
+        font-weight: 400;
+        font-size: rem(8px);
         color: $lightGray;
     }
-
     td {
+        font-weight: 400;
+        font-size: rem(10px);
         color: $superLight;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .table {
+        th, td {
+            padding: 7px 15px;
+            text-align: unset;
+        }
+        th {
+            font-size: rem(10px);
+        }
+        td {
+            font-size: rem(14px);
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .table {
+        th, td {
+            padding: 10px 20px;
+        }
+        th {
+            font-size: rem(14px);
+        }
+        td {
+            font-size: rem(18px);
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .table {
+        th, td {
+            padding: 15px 35px;
+        }
+        th {
+            font-size: rem(16px);
+        }
+        td {
+            font-size: rem(20px);
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .table {
+        th, td {
+            padding: 25px 50px;
+        }
+        th {
+            font-size: rem(18px);
+        }
+        td {
+            font-weight: 500;
+            font-size: rem(22px);
+        }
     }
 }
