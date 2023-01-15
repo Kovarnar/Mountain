@@ -45,7 +45,13 @@ function Map({ positionDefault, onClickPosition, position }) {
     }
 
     return (
-        <MapContainer onClick={handleClick} center={positionDefault} zoom={5} style={{height: '90vh'}} > 
+        <MapContainer 
+            onClick={handleClick} 
+            center={positionDefault} 
+            zoom={5} 
+            scrollWheelZoom={false}
+            style={{height: '100vh'}}
+        > 
             <TileLayer url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=wAv0Sn9KoTGSgW3yQWaO" />
             {locations.map((el) => (
                 <Marker position={el.location} icon={GetIcon(40, 40)}>

@@ -104,7 +104,7 @@ function PopSwiper() {
             mountain: 'Говерла',
             height: '2 061 м',
             days: '4 дня',
-            price: 'от 500 $',
+            price: 'от 1000 $',
             level: 'Простой уровень'
         },
     ];
@@ -132,7 +132,7 @@ function PopSwiper() {
                     disableOnInteraction: false,
                 }}
                 loopFillGroupWithBlank={true}
-                pagination={true}
+                pagination={{clickable: true}}
                 modules={[Pagination, Autoplay]}
                 className="mySwiper"
             >

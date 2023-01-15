@@ -4,15 +4,11 @@
     background: $gray
 }
 
-
-
-
 .item {
     margin: 0 auto 40px;
     position: relative;
     max-width: 370px;
     max-height: 326px;
-
     &__img {
         overflow: hidden;
         img {
@@ -20,7 +16,6 @@
             object-fit: cover;
         }
     }
-
     &__content{
         position: absolute;
         top: 0;
