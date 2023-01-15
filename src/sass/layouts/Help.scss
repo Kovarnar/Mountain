@@ -1,0 +1,39 @@
+@import '../base/index.scss';
+
+.help {
+    background-color: $dark;
+    width: 100%;
+    
+    // &__box{}
+    &__image {
+        img {
+            width: 100%;
+            height: unset;
+            object-fit: cover;
+        }
+    }
+
+    &__container{
+        padding: 40px 15px;  // 80px 60px 80px ?px
+    }
+    .title{
+        color: $superLight;
+        line-height: 1.15;
+        margin-bottom: 20px;    // 40px
+    }
+    .text{
+        color: $superLight;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .help-form{
+        margin-bottom: 15px;    //25px
+    }
+    &__agree{
+        font-family: $robotoFont;
+        font-weight: 400;
+        font-size: rem(10px); //14px;
+        line-height: 1.4;
+        color: $superLight;
+    }
+}

@@ -1,9 +1,7 @@
-// import React, { useState } from 'react';
 import Logo from '../components/Logo';
 import HeaderNav from '../components/HeaderNav';
 import HeaderInfo from '../components/HeaderInfo';
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-// import HeaderBtn from '../components/HeaderBtn';
 import '../sass/layouts/Header.scss';
 import { useState } from 'react';
 

@@ -20,6 +20,8 @@ function FormUser() {
         <form 
             onSubmit={handleSubmit((data) => {console.log(data);})} 
             className="form"
+            action="#" 
+            method="post"
         >
             <div className="form__div">
                 <input {...register("email", {
@@ -30,7 +32,7 @@ function FormUser() {
                         }
                     })} 
                     type="text" 
-                    placeholder="Email" 
+                    placeholder="E-mail" 
                     className="form__input"
                 />
                 <p className="form__info">{errors.email?.message}</p>

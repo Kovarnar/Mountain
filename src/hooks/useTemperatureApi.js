@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { getDataApi } from '../utils/getDataApi'
 
-function useTemperatureApi (positionDefault = [42.82609519439717, 44.2983546803614]) {
+function useTemperatureApi (positionDefault = [48.16013827853842, 24.499487493380435]) {
     const [dataWeather, setDataWeather] = useState({ latlng: { lat: positionDefault[0], lng: positionDefault[1] }, positionDefault, isLoadingApi: false, errorApi: null })
     useEffect(() => {
         const search = async () => {

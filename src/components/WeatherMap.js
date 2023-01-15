@@ -1,8 +1,8 @@
-import Map from './Map';
+import MapBig from './MapBig';
 import ViewData from './ViewData';
 import useTemperatureApi from '../hooks/useTemperatureApi';
 
-function WeatherMap() {
+const WeatherMap = () => {
     const [dataWeather, setDataWeather] = useTemperatureApi()
 
     const handleClickNewPosition = (latlng) => {
@@ -12,21 +12,21 @@ function WeatherMap() {
     return (
         <div className="wrapper-global">
             <div className="wrapper-map">
-                <Map
-                positionDefault={dataWeather.positionDefault}
-                onClickPosition={handleClickNewPosition}
-                position={dataWeather.latlng}
+                <MapBig
+                    positionDefault={dataWeather.positionDefault}
+                    onClickPosition={handleClickNewPosition}
+                    position={dataWeather.latlng}
                 />
             </div>
             <div className="wrapper-view-data">
                 <ViewData
-                dataWeather={dataWeather?.data}
-                isLoadingApi={dataWeather?.isLoadingApi}
-                errorApi={dataWeather?.errorApi}
+                    dataWeather={dataWeather?.data}
+                    isLoadingApi={dataWeather?.isLoadingApi}
+                    errorApi={dataWeather?.errorApi}
                 />
             </div>
         </div>
     )
 }
 
-export default WeatherMap;
+export default WeatherMap

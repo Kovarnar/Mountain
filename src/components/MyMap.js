@@ -18,6 +18,7 @@ function MyMap() {
         <MapContainer 
             center={center}
             zoom={14}
+            scrollWheelZoom={false}
             className='maps'
         > 
             <TileLayer
@@ -25,8 +26,7 @@ function MyMap() {
             />
             <Marker position={center} icon={GetIcon(40, 40)}>
                 <Popup>
-                    Добро пожаловать<br/>
-                    в наш офис!
+                    Добро пожаловать<br/>в наш офис!
                 </Popup>
             </Marker>
             

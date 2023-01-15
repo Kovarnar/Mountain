@@ -1,4 +1,3 @@
-// import Maps from './Maps';
 import Title from './Title';
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
