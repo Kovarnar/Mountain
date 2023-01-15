@@ -65,7 +65,6 @@ function PopSwiper() {
             price: 'от 3000 $',
             level: 'Сложный уровень'
         },
-    
         {
             id: 5,
             src1: require('../img/popular/img1.webp'),
@@ -93,6 +92,20 @@ function PopSwiper() {
             days: '21 день',
             price: 'от 8000 $',
             level: 'Сложный уровень'
+        },
+        {
+            id: 7,
+            src1: require('../img/popular/img5.webp'),
+            src2: require('../img/popular/img5.webp'),
+            src3: require('../img/popular/img5.webp'),
+            src4: require('../img/popular/img5.jpg'),
+            foralt: 'Вершина Говерла',
+            country: 'Украина',
+            mountain: 'Говерла',
+            height: '2 061 м',
+            days: '4 дня',
+            price: 'от 500 $',
+            level: 'Простой уровень'
         },
     ];
 
@@ -124,7 +137,7 @@ function PopSwiper() {
                 className="mySwiper"
             >
                 {forItems.map((el) => {
-                    return <SwiperSlide>
+                    return <SwiperSlide key={el.id}>
                         <div className="item">
                             <picture className='item__img'>
                                 <source media="(max-resolution: 1dppx)" srcSet={el.src1} />

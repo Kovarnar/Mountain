@@ -1,12 +1,13 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Popular from './components/Popular';
-import List from './components/List';
+import Header from './Header';
+import Hero from './Hero';
+import About from './About';
+import Popular from './Popular';
+import List from './List';
 
-import Contacts from './components/Contacts';
-import Footer from './components/Footer';
-import './sass/layouts/App.scss';
+import WeatherMap from './WeatherMap';
+import Contacts from './Contacts';
+import Footer from './Footer';
+import '../sass/layouts/App.scss';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             </div>
         </section>
         */}
+        <WeatherMap />
         <Contacts />
       </main>
       <Footer />
