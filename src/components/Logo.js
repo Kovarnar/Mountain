@@ -1,5 +1,4 @@
 import logo from '../img/logo.svg';
-import '../sass/layouts/Logo.scss';
 
 function Logo() {
     return ( 
