@@ -71,6 +71,14 @@
 
 @media only screen and (min-width: 1024px) {
     .help {
+        max-height: 749px;
+        overflow: hidden;
+        &__container{
+            max-width: 600px;
+            // text-align: center;
+            justify-self: end;
+            padding: 60px  60px 60px 15px;
+        }
         .title{
             margin-bottom: 40px;
         }
@@ -79,19 +87,6 @@
         }
         &__agree{
             font-size: rem(14px);
-        }
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .help {
-        max-height: 700px;
-        overflow: hidden;
-        &__container{
-            max-width: 600px;
-            text-align: center;
-            justify-self: end;
-            padding: 60px  60px 60px 15px;
         }
     }
 }

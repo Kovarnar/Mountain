@@ -1,4 +1,5 @@
 import HeaderMenuItem from './HeaderMenuItem';
+import { useState } from 'react';
 import '../sass/layouts/HeaderNav.scss';
 
 const items = [
@@ -30,7 +31,7 @@ function Headernav() {
             <h2 className='visually-hidden'>For SEO</h2>
             <ul className='header__menu'>
                 {items.map((el, i) => (
-                    <HeaderMenuItem key={i} title={el.title} to={el.to}/>
+                    <HeaderMenuItem key={i} title={el.title} to={el.to} />
                 ))}
             </ul>
         </nav>

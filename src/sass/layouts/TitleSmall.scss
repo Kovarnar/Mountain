@@ -1,0 +1,19 @@
+@import '../base/index.scss';
+
+.title-small {
+    font-family: $robotoFont;
+    font-weight: 700;
+    font-size: rem(16px);
+    line-height: 1.4;
+    color: $dark;
+
+    @media only screen and (min-width: 576px) {
+        font-size: rem(18px);
+    }
+    @media only screen and (min-width: 768px) {
+        font-size: rem(20px);
+    }
+    @media only screen and (min-width: 1024px) {
+        font-size: rem(22px);
+    }
+}

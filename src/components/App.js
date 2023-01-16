@@ -3,9 +3,8 @@ import Hero from './Hero';
 import About from './About';
 import Popular from './Popular';
 import List from './List';
-
+import Blog from './Blog';
 import Help from './Help';
-import WeatherMap from './WeatherMap';
 import Contacts from './Contacts';
 import Footer from './Footer';
 import '../sass/layouts/App.scss';
@@ -20,14 +19,7 @@ function App() {
         <About />
         <Popular />
         <List />
-        <WeatherMap />
-        
-        {/* <section className='blog'>
-            <div className='container'>
-                <Title titleH2={TITLE[3]}/>
-            </div>
-        </section> */}
-        
+        <Blog />
         <Help />
         <Contacts />
       </main>

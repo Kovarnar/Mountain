@@ -24,12 +24,16 @@ function HelpForm() {
                 <input {...register("name", {
                         required: "Вы не ввели имя",
                         pattern: {
-                            value: /^[A-Z]/i,
+                            value: /^[\w]{3}/i,
                             message: 'Некоректное имя'
                         },
                         minLength: {
                             value: 3,
                             message: "Мынимальная длинна 3 символа"
+                        },
+                        maxLength: {
+                            value: 20,
+                            message: "Максимальная длинна 20 символа"
                         }
                     })} 
                     type="text" 
@@ -42,12 +46,16 @@ function HelpForm() {
                 <input {...register("phone", {
                         required: "Вы не ввели телефон",
                         pattern: {
-                            value: /^[0-9]/i,
+                            value: /^[\d]{10}/i,
                             message: 'Некоректный телефон'
                         },
                         minLength: {
                             value: 10,
-                            message: "Мынимальная длинна 10 "
+                            message: "Минимальная длинна 10 цыфр"
+                        },
+                        maxLength: {
+                            value: 10,
+                            message: "Максимальная длинна 10 цыфр"
                         }
                     })} 
                     type="text" 

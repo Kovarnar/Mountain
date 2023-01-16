@@ -7,6 +7,9 @@
     color: $superLight;
     border: none;
     transition: all .5s ease;
+    font-family: $robotoFont;
+    font-weight: 500;
+
     &:hover, &:focus {
         background-color:rgb(236, 81, 24, 0.85);
         letter-spacing: 0.15rem;

@@ -22,14 +22,12 @@ function Help() {
                 <HelpForm />
                 <p className='help__agree'>Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
             </div>
-            {/* <div className='help__wrapper'> */}
-                <picture className='help__image'>
-                    <source media="(max-resolution: 1dppx)" srcSet={helpimg[0].src1} />
-                    <source media="(max-resolution: 2dppx)" srcSet={helpimg[0].src2} />
-                    <source media="(max-resolution: 3dppx)" srcSet={helpimg[0].src3} />
-                    <img src={helpimg[0].src4} alt={helpimg[0].foralt} width="683" height="690" loading="lazy" />
-                </picture>
-            {/* </div> */}
+            <picture className='help__image'>
+                <source media="(max-resolution: 1dppx)" srcSet={helpimg[0].src1} />
+                <source media="(max-resolution: 2dppx)" srcSet={helpimg[0].src2} />
+                <source media="(max-resolution: 3dppx)" srcSet={helpimg[0].src3} />
+                <img src={helpimg[0].src4} alt={helpimg[0].foralt} width="683" height="690" loading="lazy" />
+            </picture>
         </section>
     );
 }

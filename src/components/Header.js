@@ -2,8 +2,8 @@ import Logo from '../components/Logo';
 import HeaderNav from '../components/HeaderNav';
 import HeaderInfo from '../components/HeaderInfo';
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-import '../sass/layouts/Header.scss';
 import { useState } from 'react';
+import '../sass/layouts/Header.scss';
 
 function Header() {
     const [nav, setNav] = useState(false);

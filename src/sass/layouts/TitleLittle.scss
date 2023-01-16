@@ -1,15 +1,15 @@
 @import '../base/index.scss';
 
-.text-data {
-    display: block;
+.title-little {
     font-family: $robotoFont;
     font-weight: 400;
-    font-size: rem(10px);
-    color: $gray;
+    font-size: rem(14px);
+    line-height: 1.4;
+    color: $dark;
     @media only screen and (min-width: 768px) {
-        font-size: rem(12px);
+        font-size: rem(16px);
     }
     @media only screen and (min-width: 1024px) {
-        font-size: rem(14px);
+        font-size: rem(18px);
     }
 }

@@ -21,7 +21,7 @@ function Contacts() {
                         </li>
                         <li className='contacts__item'>
                             <span>E-mail:</span>
-                            <a href="mailto:info@mountain.ru">info@mountain.ru</a>
+                            <a href="mailto:info@mountain.ua">info@mountain.ru</a>
                         </li>
                         <li className='contacts__item'>
                             <span>Социальные сети:</span>
