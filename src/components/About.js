@@ -15,8 +15,8 @@ function About() {
             <div className='container about__container'>
                 <div className='about__content'>
                     <Title titleH2={title} />
-                    {text.map((el) => (
-                        <Text textP={el}/>
+                    {text.map((el, i) => (
+                        <Text key={i} textP={el}/>
                     ))}
                 </div>
                 <div className="about__map">

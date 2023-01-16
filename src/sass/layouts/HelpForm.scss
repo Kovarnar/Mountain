@@ -1,15 +1,11 @@
 @import '../base/index.scss';
 
 .help-form {
-    display: flex;
-    flex-direction: column;
-
     font-family: $robotoFont;
     font-weight: 400;
-    font-size: rem(14px);   //16px
+    font-size: rem(14px);
     color: $superLight;
     line-height: 1.4;
-
     &__div{
         margin-bottom: 20px;
     }
@@ -21,27 +17,26 @@
         background-color: transparent;
         color: inherit;
         letter-spacing: 0.05rem;
-
         &::placeholder {
-            font-size: rem(14px);
+            font-size: rem(12px);
             color: $otherGray;
             letter-spacing: 0;
         }
     }
+}
 
-    button {
-        padding: 10px 25px; // 20px 50px
-        background-color: $orange;
-        color: $superLight;
-        border: none;
-        transition: all .3s ease;
-        &:hover, &:focus {
-            background-color:rgb(236, 81, 24, 0.85);
-            letter-spacing: 0.15rem;
+@media only screen and (min-width: 1024px) {
+    .help-form {
+        font-size: rem(18px);
+        &__div:last-of-type{
+            margin-bottom: 45px;
         }
-        &:active {
-            transform: scale(0.95);
+        input {
+            width: 100%;
+            padding: 15px 5px;
+            &::placeholder {
+                font-size: rem(16px);
+            }
         }
     }
 }
-        

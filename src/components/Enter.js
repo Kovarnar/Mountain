@@ -9,7 +9,7 @@ function Enter() {
 
     return (
         <div className='header__enter enter'>
-            <button className='enter__btn' onClick={() => setOpen(!open)}>
+            <button className='enter__btn' onClick={() => setOpen(!open)} aria-lable='enter'>
                 <FiUser className="icon" />
             </button>
             <div className={!open ? 'modal modal--active' : 'modal' } >

@@ -38,14 +38,14 @@ function MySwiper() {
                 modules={[EffectFade, Autoplay]}
                 className='swiper'
             >
-                {CONT.map((el) => {
-                    return <SwiperSlide>
+                {CONT.map((el, i) => {
+                    return <SwiperSlide key={i}>
                         <div className='swiper__item'>
                             <picture className='swiper__img'>
                                 <source media="(max-resolution: 1dppx)" srcSet={el.src1} />
                                 <source media="(max-resolution: 2dppx)" srcSet={el.src2} />
                                 <source media="(max-resolution: 3dppx)" srcSet={el.src3} />
-                                <img src={el.src4} alt={el.foralt} width="1366" height="650" loading="lazy" />
+                                <img src={el.src4} alt={el.foralt} width="1366" height="650" />
                             </picture>
                             <div className='swiper__content'>
                                 <h2 className='swiper__title'>{el.title}</h2>

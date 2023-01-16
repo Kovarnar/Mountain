@@ -143,7 +143,7 @@ function PopSwiper() {
                                 <source media="(max-resolution: 1dppx)" srcSet={el.src1} />
                                 <source media="(max-resolution: 2dppx)" srcSet={el.src2} />
                                 <source media="(max-resolution: 3dppx)" srcSet={el.src3} />
-                                <img src={el.src4} alt={el.about} width="370" height="326" />
+                                <img src={el.src4} alt={el.foralt} width="370" height="326" />
                             </picture>
                             <div className="item__content">
                                 <div className="item__top">

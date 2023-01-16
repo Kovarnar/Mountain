@@ -27,17 +27,17 @@ function Contacts() {
                             <span>Социальные сети:</span>
                             <ul className='contacts__social'>
                                 <li>
-                                    <a href="http://" aria-label='facebook'>
+                                    <a href="#" aria-label='facebook'>
                                         <FaFacebookF className='icon' />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="http://" aria-label='instagram'>
+                                    <a href="#" aria-label='instagram'>
                                         <AiFillInstagram className='icon' />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="http://" aria-label='twitter'>
+                                    <a href="#" aria-label='twitter'>
                                         <AiOutlineTwitter className='icon' />
                                     </a>
                                 </li>

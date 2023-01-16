@@ -4,22 +4,23 @@
     background-color: $dark;
     width: 100%;
     
-    // &__box{}
     &__image {
         img {
             width: 100%;
-            height: unset;
+            max-height: 60vh;
             object-fit: cover;
+            object-position: center;
+            overflow: hidden;
         }
     }
 
     &__container{
-        padding: 40px 15px;  // 80px 60px 80px ?px
+        padding: 40px 25px;
     }
     .title{
         color: $superLight;
         line-height: 1.15;
-        margin-bottom: 20px;    // 40px
+        margin-bottom: 20px;
     }
     .text{
         color: $superLight;
@@ -27,13 +28,70 @@
         margin-bottom: 10px;
     }
     .help-form{
-        margin-bottom: 15px;    //25px
+        margin-bottom: 15px;
     }
     &__agree{
         font-family: $robotoFont;
         font-weight: 400;
-        font-size: rem(10px); //14px;
+        font-size: rem(10px);
         line-height: 1.4;
         color: $superLight;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .help {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__image {
+            img {
+                width: 100%;
+                max-height: unset;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        &__container{
+            padding: 30px;
+        }
+        .title{
+            margin-bottom: 30px;
+        }
+        .help-form{
+            margin-bottom: 20px;
+        }
+        &__agree{
+            font-size: rem(12px);
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .help {
+        .title{
+            margin-bottom: 40px;
+        }
+        .help-form{
+            margin-bottom: 25px;
+        }
+        &__agree{
+            font-size: rem(14px);
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .help {
+        max-height: 700px;
+        overflow: hidden;
+        &__container{
+            max-width: 600px;
+            text-align: center;
+            justify-self: end;
+            padding: 60px  60px 60px 15px;
+        }
     }
 }

@@ -1,11 +1,12 @@
 @import '../base/index.scss';
 
-button {
+.btn-orange {
     padding: 10px 25px; // 20px 50px
+    width: 100%;
     background-color: $orange;
     color: $superLight;
     border: none;
-    transition: all .3s ease;
+    transition: all .5s ease;
     &:hover, &:focus {
         background-color:rgb(236, 81, 24, 0.85);
         letter-spacing: 0.15rem;
@@ -15,6 +16,8 @@ button {
     }
 }
 
-// @media only screen and (min-width: 768px) {
-
-// }
+@media only screen and (min-width: 768px) {
+    .btn-orange {
+        padding: 20px 50px; 
+    }
+}
