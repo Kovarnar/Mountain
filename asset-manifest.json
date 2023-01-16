@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mountain/static/css/main.190a356e.css",
-    "main.js": "/mountain/static/js/main.d0e8c651.js",
+    "main.css": "/mountain/static/css/main.59165572.css",
+    "main.js": "/mountain/static/js/main.7e5a6db4.js",
     "static/js/787.b5aa3df0.chunk.js": "/mountain/static/js/787.b5aa3df0.chunk.js",
     "static/media/list1@3x.webp": "/mountain/static/media/list1@3x.a086412633a18df38cc4.webp",
     "static/media/hero1@3x.webp": "/mountain/static/media/hero1@3x.13ed4db43ac2d8532eb6.webp",
@@ -37,15 +37,15 @@
     "static/media/img1@2x.webp": "/mountain/static/media/img1@2x.36ed289c5deaa922f3b3.webp",
     "static/media/img3.webp": "/mountain/static/media/img3.e3ac5d58d10620b4fabc.webp",
     "static/media/img2.webp": "/mountain/static/media/img2.8d98ecf9290a602f2ef5.webp",
-    "static/media/logo.svg": "/mountain/static/media/logo.2aa589bf97f7fc048600ca2716bd8ead.svg",
     "index.html": "/mountain/index.html",
+    "static/media/logo.svg": "/mountain/static/media/logo.2aa589bf97f7fc048600ca2716bd8ead.svg",
     "static/media/location.svg": "/mountain/static/media/location.c174a31e21ebb3585f0a9d4c4e472f71.svg",
-    "main.190a356e.css.map": "/mountain/static/css/main.190a356e.css.map",
-    "main.d0e8c651.js.map": "/mountain/static/js/main.d0e8c651.js.map",
+    "main.59165572.css.map": "/mountain/static/css/main.59165572.css.map",
+    "main.7e5a6db4.js.map": "/mountain/static/js/main.7e5a6db4.js.map",
     "787.b5aa3df0.chunk.js.map": "/mountain/static/js/787.b5aa3df0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.190a356e.css",
-    "static/js/main.d0e8c651.js"
+    "static/css/main.59165572.css",
+    "static/js/main.7e5a6db4.js"
   ]
 }
